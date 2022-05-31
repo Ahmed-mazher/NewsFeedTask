@@ -1,8 +1,8 @@
 //
-//  ConnectivityManager.swift
-//  JSONToCoreDataAgain
+//  ConnectivityMananger.swift
+//  NewsFeedTask
 //
-//  Copyright © 2019 anoop. All rights reserved.
+//  Created by Rivile on 5/31/22.
 //
 
 import Foundation
