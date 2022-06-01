@@ -11,6 +11,8 @@ import Combine
 
 class NewsFeedVC: UIViewController {
 
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     lazy var viewModel: NewsFeedViewModel = {
         return NewsFeedViewModel()
     }()
@@ -44,6 +46,7 @@ class NewsFeedVC: UIViewController {
             self?.sections = sections
                 guard let stock = self?.viewModel.getStocksData() else {return}
                 self?.sections.insert(stock , at: 0)
+                //self?.fetchHistory()
             self?.reloadData()
         }.store(in: &cancellable)
         
@@ -73,12 +76,45 @@ class NewsFeedVC: UIViewController {
         }else{
             //Fetch from local
             print("local")
+            self.sections = []
+            fetchStocks()
+            self.fetchHistory()
             //self.sections = Bundle.main.decode([Section].self, from: "newsFeed.json")
-            //reloadData()
+            reloadData()
             
         }
     }
+    func fetchHistory(){
+        do {
+            let historyItems: [History] = try context.fetch(History.fetchRequest())
+            var historyArray: [NewsFeed] = []
+            for i in historyItems{
+                let newfeed = NewsFeed(title: i.title, description: i.imageDescription, urlToImage: i.imageUrl, publishedAt: i.date)
+                historyArray.append(newfeed)
+            }
+            let historySection = Section(id: 4, type: "History", title: "History", newsItems: historyArray)
+            
+            self.sections.append(historySection)
+        } catch {
+            print(error)
+        }
+    }
     
+    func fetchStocks(){
+        do {
+            let historyStocks: [StockL] = try context.fetch(StockL.fetchRequest())
+            var someStocksArray: [NewsFeed] = []
+            for i in historyStocks{
+                let newfeed = NewsFeed(stockName: i.name, price: i.price)
+                someStocksArray.append(newfeed)
+            }
+            let stockSection = Section(id: 1, type: "Stocks", title: "Stocks", newsItems: someStocksArray)
+        
+            self.sections.insert(stockSection, at: 0)
+        } catch {
+            print(error)
+        }
+    }
     
 }
 

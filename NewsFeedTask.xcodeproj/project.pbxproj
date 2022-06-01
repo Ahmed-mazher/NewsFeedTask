@@ -10,6 +10,10 @@
 		17B591F95CD6672DE0EB2A82 /* Pods_NewsFeedTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A163E928F4D58F273FB3A6D1 /* Pods_NewsFeedTask.framework */; };
 		1CB3A1C9CAE31C81D121A3D2 /* Pods_NewsFeedTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD650536ED222BAA01DF22 /* Pods_NewsFeedTaskTests.framework */; };
 		7625BF780C542BCCF52DD3F2 /* Pods_NewsFeedTask_NewsFeedTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0314B0B20FF9E49600A15A /* Pods_NewsFeedTask_NewsFeedTaskUITests.framework */; };
+		F87EE146284797F600BCE130 /* StockL+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87EE142284797F600BCE130 /* StockL+CoreDataClass.swift */; };
+		F87EE147284797F600BCE130 /* StockL+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87EE143284797F600BCE130 /* StockL+CoreDataProperties.swift */; };
+		F87EE148284797F600BCE130 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87EE144284797F600BCE130 /* History+CoreDataClass.swift */; };
+		F87EE149284797F600BCE130 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87EE145284797F600BCE130 /* History+CoreDataProperties.swift */; };
 		F8CE1105284654BF000E3545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE1104284654BF000E3545 /* AppDelegate.swift */; };
 		F8CE1107284654C0000E3545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE1106284654C0000E3545 /* SceneDelegate.swift */; };
 		F8CE1109284654C0000E3545 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE1108284654C0000E3545 /* NewsFeedVC.swift */; };
@@ -64,6 +68,10 @@
 		D3DD650536ED222BAA01DF22 /* Pods_NewsFeedTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsFeedTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87F0C7D7A29B2F00C801B1C /* Pods-NewsFeedTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeedTask.release.xcconfig"; path = "Target Support Files/Pods-NewsFeedTask/Pods-NewsFeedTask.release.xcconfig"; sourceTree = "<group>"; };
 		E8EDD23C2F625DAFED54B397 /* Pods-NewsFeedTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsFeedTaskTests.release.xcconfig"; path = "Target Support Files/Pods-NewsFeedTaskTests/Pods-NewsFeedTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		F87EE142284797F600BCE130 /* StockL+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockL+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F87EE143284797F600BCE130 /* StockL+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockL+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F87EE144284797F600BCE130 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F87EE145284797F600BCE130 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F8CE1101284654BF000E3545 /* NewsFeedTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeedTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CE1104284654BF000E3545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8CE1106284654C0000E3545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +154,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F87EE14A2847980C00BCE130 /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F87EE142284797F600BCE130 /* StockL+CoreDataClass.swift */,
+				F87EE143284797F600BCE130 /* StockL+CoreDataProperties.swift */,
+				F87EE144284797F600BCE130 /* History+CoreDataClass.swift */,
+				F87EE145284797F600BCE130 /* History+CoreDataProperties.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
 		F8CE10F8284654BF000E3545 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +190,7 @@
 		F8CE1103284654BF000E3545 /* NewsFeedTask */ = {
 			isa = PBXGroup;
 			children = (
+				F87EE14A2847980C00BCE130 /* CoreDataClasses */,
 				F8CE1143284661FA000E3545 /* Extensions */,
 				F8CE113A28465667000E3545 /* Network */,
 				F8CE1139284655AC000E3545 /* Model */,
@@ -529,13 +549,17 @@
 				F8CE11402846600B000E3545 /* Section.swift in Sources */,
 				F8CE113C2846572C000E3545 /* ConnectivityManager.swift in Sources */,
 				F8CE11512846A0A3000E3545 /* UIImageView+Ext.swift in Sources */,
+				F87EE148284797F600BCE130 /* History+CoreDataClass.swift in Sources */,
 				F8CE114D28466308000E3545 /* SectionHeader.swift in Sources */,
+				F87EE149284797F600BCE130 /* History+CoreDataProperties.swift in Sources */,
 				F8CE11532846A505000E3545 /* StockTickersCell.swift in Sources */,
 				F8CE1149284662F2000E3545 /* LatestNewsCell.swift in Sources */,
+				F87EE147284797F600BCE130 /* StockL+CoreDataProperties.swift in Sources */,
 				F8CE11422846601C000E3545 /* NewsFeed.swift in Sources */,
 				F8CE1107284654C0000E3545 /* SceneDelegate.swift in Sources */,
 				F8CE115E2846D789000E3545 /* ArticleModel.swift in Sources */,
 				F8CE11612847602E000E3545 /* NewsFeedViewModel.swift in Sources */,
+				F87EE146284797F600BCE130 /* StockL+CoreDataClass.swift in Sources */,
 				F8CE11592846C981000E3545 /* ApiServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
