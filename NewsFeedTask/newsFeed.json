@@ -1,164 +1,163 @@
 [
-   
     {
         "id": 2,
-		"type": "Latest News",
-		"title": "Latest News",
+        "type": "Latest News",
+        "title": "Latest News",
         "stocksItems": [],
-		"newsItems": [
+        "newsItems": [
             {
-                  "source": {
+                "source": {
                     "id": "cnn",
                     "name": "CNN"
-                  },
-                  "author": "Issy Ronald, CNN",
-                  "title": "'God needs to come and explain it': How the football world reacted to Real Madrid's extraordinary Champions League semifinal victory",
-                  "description": "\"We have a score to settle,\" Liverpool star Mo Salah tweeted after Real Madrid staged an extraordinary late comeback against Manchester City to set up a clash with the Reds in the Champions League final on May 28.",
-                  "url": "https://www.cnn.com/2022/05/05/football/real-madrid-champions-league-reaction-liverpool-spt-intl/index.html",
-                  "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220504173124-11-champions-league-semifinal-real-madrid-manchester-city-super-tease.jpg",
-                  "publishedAt": "2022-05-05T10:06:14Z",
-                  "content": "(CNN)\"We have a score to settle,\" Liverpool star Mo Salah tweeted after Real Madrid staged an extraordinary late comeback against Manchester City to set up a clash with the Reds in the Champions Leag… [+2830 chars]"
                 },
-                {
-                  "source": {
+                "author": "Issy Ronald, CNN",
+                "title": "'God needs to come and explain it': How the football world reacted to Real Madrid's extraordinary Champions League semifinal victory",
+                "description": "\"We have a score to settle,\" Liverpool star Mo Salah tweeted after Real Madrid staged an extraordinary late comeback against Manchester City to set up a clash with the Reds in the Champions League final on May 28.",
+                "url": "https://www.cnn.com/2022/05/05/football/real-madrid-champions-league-reaction-liverpool-spt-intl/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220504173124-11-champions-league-semifinal-real-madrid-manchester-city-super-tease.jpg",
+                "publishedAt": "2022-05-05T10:06:14Z",
+                "content": "(CNN)\"We have a score to settle,\" Liverpool star Mo Salah tweeted after Real Madrid staged an extraordinary late comeback against Manchester City to set up a clash with the Reds in the Champions Leag… [+2830 chars]"
+            },
+            {
+                "source": {
                     "id": "cnn1",
                     "name": "CNN"
-                  },
-                  "author": "Esha Mitra, Rhea Mogul",
-                  "title": "A 13-year-old girl told the police she had been gang-raped. Then a police officer allegedly raped her",
-                  "description": "A 13-year-old girl who was allegedly gang-raped by four men in India, was allegedly raped again by a police officer after she tried to seek his help in reporting the initial attack.",
-                  "url": "https://www.cnn.com/2022/05/05/india/india-rape-teenager-police-arrested-intl-hnk/index.html",
-                  "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/220505013803-lalitapur-india-map.jpg?c=16x9&q=w_800,c_fill",
-                  "publishedAt": "2022-05-05T09:58:01Z",
-                  "content": "A 13-year-old girl who was allegedly gang-raped by four men in India, was allegedly raped again by a police officer after she tried to seek his help in reporting the initial attack.\r\nAuthorities in U… [+4395 chars]"
                 },
-                {
-                  "source": {
+                "author": "Esha Mitra, Rhea Mogul",
+                "title": "A 13-year-old girl told the police she had been gang-raped. Then a police officer allegedly raped her",
+                "description": "A 13-year-old girl who was allegedly gang-raped by four men in India, was allegedly raped again by a police officer after she tried to seek his help in reporting the initial attack.",
+                "url": "https://www.cnn.com/2022/05/05/india/india-rape-teenager-police-arrested-intl-hnk/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/220505013803-lalitapur-india-map.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2022-05-05T09:58:01Z",
+                "content": "A 13-year-old girl who was allegedly gang-raped by four men in India, was allegedly raped again by a police officer after she tried to seek his help in reporting the initial attack.\r\nAuthorities in U… [+4395 chars]"
+            },
+            {
+                "source": {
                     "id": "cnn2",
                     "name": "CNN"
-                  },
-                  "author": "Reuters",
-                  "title": "Turkey's inflation hits two-decade high of 70%",
-                  "description": "Turkey's annual inflation jumped to 69.97% in April, above forecast and at a two-decade high, according to data on Thursday, fueled by the Russia-Ukraine conflict and rising energy and commodity prices after last year's lira crash.",
-                  "url": "https://www.cnn.com/2022/05/05/economy/turkey-inflation-soars/index.html",
-                  "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505053006-istanbul-shooppers-0406-super-tease.jpg",
-                  "publishedAt": "2022-05-05T09:37:48Z",
-                  "content": "IstanbulTurkey's annual inflation jumped to 69.97% in April, above forecast and at a two-decade high, according to data on Thursday, fueled by the Russia-Ukraine conflict and rising energy and commod… [+1030 chars]"
                 },
-                {
-                  "source": {
+                "author": "Reuters",
+                "title": "Turkey's inflation hits two-decade high of 70%",
+                "description": "Turkey's annual inflation jumped to 69.97% in April, above forecast and at a two-decade high, according to data on Thursday, fueled by the Russia-Ukraine conflict and rising energy and commodity prices after last year's lira crash.",
+                "url": "https://www.cnn.com/2022/05/05/economy/turkey-inflation-soars/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505053006-istanbul-shooppers-0406-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:37:48Z",
+                "content": "IstanbulTurkey's annual inflation jumped to 69.97% in April, above forecast and at a two-decade high, according to data on Thursday, fueled by the Russia-Ukraine conflict and rising energy and commod… [+1030 chars]"
+            },
+            {
+                "source": {
                     "id": "cnn3",
                     "name": "CNN"
-                  },
-                  "author": "Ben Church",
-                  "title": "Chris Paul masterclass inspires Phoenix Suns to 2-0 lead in NBA playoffs",
-                  "description": "NBA veteran Chris Paul led the Phoenix Suns to victory against the Dallas Mavericks in the NBA playoffs on Wednesday in his quest for his first NBA championship.",
-                  "url": "https://www.cnn.com/2022/05/05/sport/chris-paul-phoenix-suns-nba-playoff-spt-intl/index.html",
-                  "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/220505044755-02-chris-paul-0504.jpg?c=16x9&q=w_800,c_fill",
-                  "publishedAt": "2022-05-05T09:33:40Z",
-                  "content": "NBA veteran Chris Paul led the Phoenix Suns to victory against the Dallas Mavericks in the NBA playoffs on Wednesday in his quest for his first NBA championship.\r\nPaul, who turns 37 on Friday, racked… [+2470 chars]"
                 },
-                {
-                  "source": {
+                "author": "Ben Church",
+                "title": "Chris Paul masterclass inspires Phoenix Suns to 2-0 lead in NBA playoffs",
+                "description": "NBA veteran Chris Paul led the Phoenix Suns to victory against the Dallas Mavericks in the NBA playoffs on Wednesday in his quest for his first NBA championship.",
+                "url": "https://www.cnn.com/2022/05/05/sport/chris-paul-phoenix-suns-nba-playoff-spt-intl/index.html",
+                "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/220505044755-02-chris-paul-0504.jpg?c=16x9&q=w_800,c_fill",
+                "publishedAt": "2022-05-05T09:33:40Z",
+                "content": "NBA veteran Chris Paul led the Phoenix Suns to victory against the Dallas Mavericks in the NBA playoffs on Wednesday in his quest for his first NBA championship.\r\nPaul, who turns 37 on Friday, racked… [+2470 chars]"
+            },
+            {
+                "source": {
                     "id": "cnn4",
                     "name": "CNN"
-                  },
-                  "author": "Reuters",
-                  "title": "Shell posts record quarterly profit of $9 billion",
-                  "description": "Shell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.",
-                  "url": "https://www.cnn.com/2022/05/05/investing/shell-earnings-record-profit/index.html",
-                  "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505051920-02-shell-refinery-file-04292021-super-tease.jpg",
-                  "publishedAt": "2022-05-05T09:25:29Z",
-                  "content": "LondonShell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.\r\nTh… [+2872 chars]"
                 },
-                {
-                  "source": {
+                "author": "Reuters",
+                "title": "Shell posts record quarterly profit of $9 billion",
+                "description": "Shell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.",
+                "url": "https://www.cnn.com/2022/05/05/investing/shell-earnings-record-profit/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505051920-02-shell-refinery-file-04292021-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:25:29Z",
+                "content": "LondonShell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.\r\nTh… [+2872 chars]"
+            },
+            {
+                "source": {
                     "id": "cnn5",
                     "name": "CNN"
-                  },
-                  "author": "Melissa Alonso and Christina Maxouris, CNN",
-                  "title": "Massachusetts child protective system failed missing 7-year-old Harmony Montgomery, state office says",
-                  "description": "Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, according to a report issued Wednesday.",
-                  "url": "https://www.cnn.com/2022/05/05/us/harmony-montgomery-massachusetts-report/index.html",
-                  "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220105134350-harmony-montgomery-missing-super-tease.jpg",
-                  "publishedAt": "2022-05-05T09:12:42Z",
-                  "content": "(CNN)Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, accor… [+7532 chars]"
-                }
-		]
-	},
-	{
-        "id": 3,
-		"type": "More News",
-		"title": "More News",
-        "stocksItems": [],
-        "newsItems": [
-            {
-              "source": {
-                "id": "cnn6",
-                "name": "CNN"
-              },
-              "author": "Reuters",
-              "title": "Shell posts record quarterly profit of $9 billion",
-              "description": "Shell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.",
-              "url": "https://www.cnn.com/2022/05/05/investing/shell-earnings-record-profit/index.html",
-              "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505051920-02-shell-refinery-file-04292021-super-tease.jpg",
-              "publishedAt": "2022-05-05T09:25:29Z",
-              "content": "LondonShell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.\r\nTh… [+2872 chars]"
-            },
-            {
-              "source": {
-                "id": "cnn7",
-                "name": "CNN"
-              },
-              "author": "Melissa Alonso and Christina Maxouris, CNN",
-              "title": "Massachusetts child protective system failed missing 7-year-old Harmony Montgomery, state office says",
-              "description": "Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, according to a report issued Wednesday.",
-              "url": "https://www.cnn.com/2022/05/05/us/harmony-montgomery-massachusetts-report/index.html",
-              "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220105134350-harmony-montgomery-missing-super-tease.jpg",
-              "publishedAt": "2022-05-05T09:12:42Z",
-              "content": "(CNN)Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, accor… [+7532 chars]"
-            }
-		]
-	},
-	{
-        "id": 4,
-		"type": "History",
-		"title": "History",
-        "stocksItems": [],
-        "newsItems": [
-            {
-              "source": {
-                "id": "cnn8",
-                "name": "CNN"
-              },
-              "author": "Reuters",
-              "title": "Shell posts record quarterly profit of $9 billion",
-              "description": "Shell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.",
-              "url": "https://www.cnn.com/2022/05/05/investing/shell-earnings-record-profit/index.html",
-              "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505051920-02-shell-refinery-file-04292021-super-tease.jpg",
-              "publishedAt": "2022-05-05T09:25:29Z",
-              "content": "LondonShell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.\r\nTh… [+2872 chars]"
-            },
-            {
-              "source": {
-                "id": "cnn9",
-                "name": "CNN"
-              },
-              "author": "Melissa Alonso and Christina Maxouris, CNN",
-              "title": "Massachusetts child protective system failed missing 7-year-old Harmony Montgomery, state office says",
-              "description": "Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, according to a report issued Wednesday.",
-              "url": "https://www.cnn.com/2022/05/05/us/harmony-montgomery-massachusetts-report/index.html",
-              "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220105134350-harmony-montgomery-missing-super-tease.jpg",
-              "publishedAt": "2022-05-05T09:12:42Z",
-              "content": "(CNN)Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, accor… [+7532 chars]"
+                },
+                "author": "Melissa Alonso and Christina Maxouris, CNN",
+                "title": "Massachusetts child protective system failed missing 7-year-old Harmony Montgomery, state office says",
+                "description": "Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, according to a report issued Wednesday.",
+                "url": "https://www.cnn.com/2022/05/05/us/harmony-montgomery-massachusetts-report/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220105134350-harmony-montgomery-missing-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:12:42Z",
+                "content": "(CNN)Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, accor… [+7532 chars]"
             }
         ]
-	}
+    },
+    {
+        "id": 3,
+        "type": "More News",
+        "title": "More News",
+        "stocksItems": [],
+        "newsItems": [
+            {
+                "source": {
+                    "id": "cnn6",
+                    "name": "CNN"
+                },
+                "author": "Reuters",
+                "title": "Shell posts record quarterly profit of $9 billion",
+                "description": "Shell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.",
+                "url": "https://www.cnn.com/2022/05/05/investing/shell-earnings-record-profit/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505051920-02-shell-refinery-file-04292021-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:25:29Z",
+                "content": "LondonShell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.\r\nTh… [+2872 chars]"
+            },
+            {
+                "source": {
+                    "id": "cnn7",
+                    "name": "CNN"
+                },
+                "author": "Melissa Alonso and Christina Maxouris, CNN",
+                "title": "Massachusetts child protective system failed missing 7-year-old Harmony Montgomery, state office says",
+                "description": "Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, according to a report issued Wednesday.",
+                "url": "https://www.cnn.com/2022/05/05/us/harmony-montgomery-massachusetts-report/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220105134350-harmony-montgomery-missing-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:12:42Z",
+                "content": "(CNN)Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, accor… [+7532 chars]"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "type": "History",
+        "title": "History",
+        "stocksItems": [],
+        "newsItems": [
+            {
+                "source": {
+                    "id": "cnn8",
+                    "name": "CNN"
+                },
+                "author": "Reuters",
+                "title": "Shell posts record quarterly profit of $9 billion",
+                "description": "Shell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.",
+                "url": "https://www.cnn.com/2022/05/05/investing/shell-earnings-record-profit/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220505051920-02-shell-refinery-file-04292021-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:25:29Z",
+                "content": "LondonShell on Thursday reported a record first-quarter profit of $9.13 billion, boosted by higher oil and gas prices, stellar refining profits and the strong performance of its trading division.\r\nTh… [+2872 chars]"
+            },
+            {
+                "source": {
+                    "id": "cnn9",
+                    "name": "CNN"
+                },
+                "author": "Melissa Alonso and Christina Maxouris, CNN",
+                "title": "Massachusetts child protective system failed missing 7-year-old Harmony Montgomery, state office says",
+                "description": "Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, according to a report issued Wednesday.",
+                "url": "https://www.cnn.com/2022/05/05/us/harmony-montgomery-massachusetts-report/index.html",
+                "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220105134350-harmony-montgomery-missing-super-tease.jpg",
+                "publishedAt": "2022-05-05T09:12:42Z",
+                "content": "(CNN)Massachusetts state officials involved in the welfare case of Harmony Montgomery, the 7-year-old girl last seen in 2019, failed to prioritize her well-being and safety throughout her life, accor… [+7532 chars]"
+            }
+        ]
+    }
 ]
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,14 +1,13 @@
 //
-//  NewsFeedTaskTests.swift
+//  ApiClientTests.swift
 //  NewsFeedTaskTests
 //
-//  Created by Rivile on 5/31/22.
+//  Created by Rivile on 6/1/22.
 //
 
 import XCTest
-@testable import NewsFeedTask
 
-class NewsFeedTaskTests: XCTestCase {
+class ApiClientTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

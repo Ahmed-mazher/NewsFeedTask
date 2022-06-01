@@ -15,7 +15,7 @@ class ConnectivityMananger: NSObject {
         super.init()
         setupReachability()
     }
-    @Published private (set) var isConnected: Bool = true
+    @Published private (set) var isConnected: Bool = false
     private static let _shared = ConnectivityMananger()
 
     class func shared() -> ConnectivityMananger {

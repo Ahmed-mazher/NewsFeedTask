@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NewsFeedVC.swift
 //  NewsFeedTask
 //
 //  Created by Rivile on 5/31/22.
@@ -9,15 +9,19 @@ import UIKit
 import Combine
 
 
-class ViewController: UIViewController {
+class NewsFeedVC: UIViewController {
 
-    let sections = Bundle.main.decode([Section].self, from: "newsFeed.json")
+    lazy var viewModel: NewsFeedViewModel = {
+        return NewsFeedViewModel()
+    }()
+    
+    var sections: [Section] = []
+    var cancellable = Set<AnyCancellable>()
+    
     
     var collectionView: UICollectionView!
-
     var dataSource: UICollectionViewDiffableDataSource<Section, NewsFeed>?
 
-    
     var isConnected:Bool = false
     private var connectivitySubscriber:AnyCancellable?
     
@@ -26,10 +30,62 @@ class ViewController: UIViewController {
         setUpConnectivitySubscribers()
         
         initCollectionView()
+        
         createDataSource()
-        reloadData()
+        
+        
     }
 
+    
+    // Binding
+    private func setupBinders() {
+        viewModel.$sections
+            .sink { [weak self] sections in
+            self?.sections = sections
+                guard let stock = self?.viewModel.getStocksData() else {return}
+                self?.sections.insert(stock , at: 0)
+            self?.reloadData()
+        }.store(in: &cancellable)
+        
+    }
+    
+   
+    
+    
+    // Connectivity
+    func setUpConnectivitySubscribers() {
+        
+        connectivitySubscriber = ConnectivityMananger.shared().$isConnected.sink(receiveValue: { [weak self](isConnected) in
+            self?.isConnected = isConnected
+            
+            self?.updateWhenConnectionChange()
+        })
+    }
+
+    func updateWhenConnectionChange() {
+        if isConnected {
+            //Fetch from network
+            print("network")
+            
+            viewModel.getNewsData()
+            
+            setupBinders()
+        }else{
+            //Fetch from local
+            print("local")
+            self.sections = Bundle.main.decode([Section].self, from: "newsFeed.json")
+            reloadData()
+            
+        }
+    }
+    
+    
+}
+
+
+// MARK: - compositional collection View
+
+extension NewsFeedVC{
     func initCollectionView(){
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createCompositionalLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -39,6 +95,7 @@ class ViewController: UIViewController {
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier)
         collectionView.register(LatestNewsCell.self, forCellWithReuseIdentifier: LatestNewsCell.reuseIdentifier)
         collectionView.register(MoreNewsCell.self, forCellWithReuseIdentifier: MoreNewsCell.reuseIdentifier)
+        collectionView.register(StockTickersCell.self, forCellWithReuseIdentifier: StockTickersCell.reuseIdentifier)
     }
     
     
@@ -56,6 +113,8 @@ class ViewController: UIViewController {
     func createDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, NewsFeed>(collectionView: collectionView) { collectionView, indexPath, item in
             switch self.sections[indexPath.section].type {
+            case "Stocks":
+                return self.configure(StockTickersCell.self, with: item, for: indexPath)
             case "Latest News":
                 return self.configure(LatestNewsCell.self, with: item, for: indexPath)
             case "More News":
@@ -85,6 +144,7 @@ class ViewController: UIViewController {
 
         for section in sections {
             snapshot.appendItems(section.newsItems, toSection: section)
+
         }
 
         dataSource?.apply(snapshot)
@@ -95,6 +155,8 @@ class ViewController: UIViewController {
             let section = self.sections[sectionIndex]
 
             switch section.type {
+            case "Stocks":
+                return self.createStockSection(using: section)
             case "Latest News":
                 return self.createLatestNewsSection(using: section)
             case "More News":
@@ -147,6 +209,23 @@ class ViewController: UIViewController {
         return layoutSection
     }
 
+    func createStockSection(using section: Section) -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+
+        let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
+
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.28), heightDimension: .estimated(40))
+        let layoutGroup = NSCollectionLayoutGroup.vertical(layoutSize: layoutGroupSize, subitems: [layoutItem])
+
+        let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+        layoutSection.orthogonalScrollingBehavior = .continuous
+
+        let layoutSectionHeader = createSectionHeader()
+        layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+
+        return layoutSection
+    }
     
 
     func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
@@ -154,49 +233,4 @@ class ViewController: UIViewController {
         let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
         return layoutSectionHeader
     }
-    
-    
-    
-    func setUpConnectivitySubscribers() {
-        
-        connectivitySubscriber = ConnectivityMananger.shared().$isConnected.sink(receiveValue: { [weak self](isConnected) in
-            //print(isConnected ? "Online" : "Offline")
-            self?.isConnected = isConnected
-            self?.update()
-        })
-    }
-    
-
-    func update() {
-        if isConnected {
-            //Fetch from network
-            print("network")
-        }else{
-            //Fetch from local
-            print("local")
-        }
-    }
-    
 }
-
-
-
-
-
-
-
-
-//{
-//    "id": 1,
-//    "type": "Stocks",
-//    "title": "Stocks",
-//    "stocksItems": [
-//        "FORD", 72.19042874981784
-//        "FORD", -211.5509976763925
-//        "NVDA", 30.999642050562386
-//        "NVDA", -150.5328741940824
-//        "AMD", -117.59246397277423
-//        "ACN", 70.81894630569406
-//    ],
-//    "newsItems": []
-//},
