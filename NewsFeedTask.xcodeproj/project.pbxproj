@@ -24,10 +24,8 @@
 		F8CE1129284654C2000E3545 /* NewsFeedTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE1128284654C2000E3545 /* NewsFeedTaskUITests.swift */; };
 		F8CE112B284654C2000E3545 /* NewsFeedTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE112A284654C2000E3545 /* NewsFeedTaskUITestsLaunchTests.swift */; };
 		F8CE113C2846572C000E3545 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE113B2846572C000E3545 /* ConnectivityManager.swift */; };
-		F8CE113E28465C33000E3545 /* newsFeed.json in Resources */ = {isa = PBXBuildFile; fileRef = F8CE113D28465C33000E3545 /* newsFeed.json */; };
 		F8CE11402846600B000E3545 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE113F2846600B000E3545 /* Section.swift */; };
 		F8CE11422846601C000E3545 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE11412846601C000E3545 /* NewsFeed.swift */; };
-		F8CE11452846621E000E3545 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE11442846621E000E3545 /* Bundle-Decodable.swift */; };
 		F8CE1149284662F2000E3545 /* LatestNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE1146284662F2000E3545 /* LatestNewsCell.swift */; };
 		F8CE114B284662F2000E3545 /* MoreNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE1148284662F2000E3545 /* MoreNewsCell.swift */; };
 		F8CE114D28466308000E3545 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE114C28466308000E3545 /* SectionHeader.swift */; };
@@ -86,10 +84,8 @@
 		F8CE1128284654C2000E3545 /* NewsFeedTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTaskUITests.swift; sourceTree = "<group>"; };
 		F8CE112A284654C2000E3545 /* NewsFeedTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F8CE113B2846572C000E3545 /* ConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
-		F8CE113D28465C33000E3545 /* newsFeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = newsFeed.json; sourceTree = "<group>"; };
 		F8CE113F2846600B000E3545 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		F8CE11412846601C000E3545 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
-		F8CE11442846621E000E3545 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		F8CE1146284662F2000E3545 /* LatestNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatestNewsCell.swift; sourceTree = "<group>"; };
 		F8CE1148284662F2000E3545 /* MoreNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreNewsCell.swift; sourceTree = "<group>"; };
 		F8CE114C28466308000E3545 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
@@ -197,7 +193,6 @@
 				F8CE1138284655A8000E3545 /* View */,
 				F8CE1137284655A2000E3545 /* Screens */,
 				F8CE1104284654BF000E3545 /* AppDelegate.swift */,
-				F8CE113D28465C33000E3545 /* newsFeed.json */,
 				F8CE1106284654C0000E3545 /* SceneDelegate.swift */,
 				F8CE114E28466312000E3545 /* SelfConfiguringCell.swift */,
 				F8CE110A284654C0000E3545 /* Main.storyboard */,
@@ -266,7 +261,6 @@
 		F8CE1143284661FA000E3545 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F8CE11442846621E000E3545 /* Bundle-Decodable.swift */,
 				F8CE11502846A0A3000E3545 /* UIImageView+Ext.swift */,
 				F8CE11562846C6CD000E3545 /* SequenceExt.swift */,
 			);
@@ -411,7 +405,6 @@
 				F8CE1114284654C1000E3545 /* LaunchScreen.storyboard in Resources */,
 				F8CE1111284654C1000E3545 /* Assets.xcassets in Resources */,
 				F8CE110C284654C0000E3545 /* Main.storyboard in Resources */,
-				F8CE113E28465C33000E3545 /* newsFeed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +535,6 @@
 				F8CE1109284654C0000E3545 /* NewsFeedVC.swift in Sources */,
 				F8CE110F284654C0000E3545 /* NewsFeedTask.xcdatamodeld in Sources */,
 				F8CE1105284654BF000E3545 /* AppDelegate.swift in Sources */,
-				F8CE11452846621E000E3545 /* Bundle-Decodable.swift in Sources */,
 				F8CE114F28466313000E3545 /* SelfConfiguringCell.swift in Sources */,
 				F8CE114B284662F2000E3545 /* MoreNewsCell.swift in Sources */,
 				F8CE11572846C6CD000E3545 /* SequenceExt.swift in Sources */,
