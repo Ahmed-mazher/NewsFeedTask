@@ -73,8 +73,8 @@ class NewsFeedVC: UIViewController {
         }else{
             //Fetch from local
             print("local")
-            self.sections = Bundle.main.decode([Section].self, from: "newsFeed.json")
-            reloadData()
+            //self.sections = Bundle.main.decode([Section].self, from: "newsFeed.json")
+            //reloadData()
             
         }
     }

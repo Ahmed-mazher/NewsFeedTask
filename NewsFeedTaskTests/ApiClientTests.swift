@@ -6,27 +6,64 @@
 //
 
 import XCTest
+@testable import NewsFeedTask
+import OHHTTPStubs
+import Combine
 
 class ApiClientTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let apiService: NewsServiceProtocol = APIServices()
+    
+    var token = Set<AnyCancellable>()
+    
+    override func setUp() {
+         super.setUp()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        super.tearDown()
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        //given
+        stub { (urlRequest) -> Bool in
+            return urlRequest.url?.absoluteString.contains("/everything/cnn.json") ?? false
+        } response: { (urlRequest) -> HTTPStubsResponse in
+            
+            //let jsonModel = Bundle.main.decode(Section.self, from: "newsFeed.json")
+            
+            let jsonModel: [String:Any] = [
+                "status": "ok",
+                "totalResults": 99
+                
+            ]
+            
+            return HTTPStubsResponse(jsonObject: jsonModel, statusCode: 200, headers: nil)
         }
-    }
+        var expectedJson: ArticleModel? = nil
 
+        let exception = self.expectation(description: "Network Call Failed.")
+        
+        // when
+        apiService.fetchNews()
+            .sink (receiveCompletion: { (completion) in
+                switch completion{
+                case . finished:
+                    print("Publisher stoped observing")
+                case .failure(let error):
+                    print("any error hereee",error.localizedDescription)
+                }
+            }, receiveValue: { article in
+                expectedJson = article
+                exception.fulfill()
+                
+            }).store(in: &token)
+        
+        
+        
+        //then
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertNotNil(expectedJson)
+        XCTAssertEqual(expectedJson?.totalResults, 99)
+    }
 }
